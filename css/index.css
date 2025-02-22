@@ -8,23 +8,23 @@ body, html {
 
 /* Navbar */
 .navbar {
-    padding: 15px 0;
+    padding: 10px 10px;
 }
 
 .navbar-brand img.logo {
-    width: 60px;
+    width: 50px;
     height: auto;
     border-radius: 50%;
 }
 
 .navbar-brand span {
-    font-size: 1.5rem ;  
+    font-size: 1.3rem ;  
     font-weight: bold;
     color: #fff;
 }
 
 .navbar-nav .nav-link {
-    font-size: 1.2rem ;
+    font-size: 1.3rem ;
     padding: 10px 15px;
     transition: color 0.3s ease-in-out;
 }
@@ -44,12 +44,14 @@ body, html {
     background: rgba(0, 0, 0, 0.6);
     color: white;
     min-height: 100vh;
-    padding: 20px;
+    
+    padding: top 0;
 }
 
 .hero-section h1 {
     font-size: 4rem;
     font-weight: bold;
+    margin-top: 0;
 }
 
 .hero-section p {
