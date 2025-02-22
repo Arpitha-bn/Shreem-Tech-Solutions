@@ -4,58 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shreem-Tech</title>
-    <link rel="stylesheet" href="css/services.css"/> <!-- Link to external CSS -->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/services.css">
 
 </head>
 <body>
 
-    <div class="fullContainer banner" id="indexSection">
-    
-        <!-- Navbar -->
-        <header>
-            <div class="navbar">
-                <!-- Left Side: Logo & Charity Name -->
-                <div class="logo-container">
-                    <img src="image/logo1.jpg" alt="Logo">
-                    <h1>SHREEM TECH SOLUTION</h1>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="image/logo1.jpg" alt="Logo" class="logo">
+                <span class="ms-2">SHREEM TECH SOLUTION</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="client.html">Client</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Section -->
+    <section class="services-section text-center">
+        <div class="container">
+            <h1 class="mb-4">At Our Service</h1>
+            <div class="row">
+                <!-- Service Box 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-box">
+                        <img src="image/a1.jpg" class="img-fluid">
+                        <h3>Recruitment</h3>
+                        <p>Shreemtech is committed to providing customer satisfaction through commitment and the highest standards of service.</p>
+                    </div>
                 </div>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="client.html">Client</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Services Section -->
-    <section class="services-section">
-        <h1>At Our Service</h1>
-        <div class="services-container">
-            <div class="service-box">
-                <img src="image/a1.jpg">
-                <h3>Recruitment</h3>
-                <p>Shreetech is committed to provide customer satisfaction through commitment and highest standards of service. Valltec Professional Services allow our broad customers to maximize the value of outsourcing technical development </p>
-            </div>
-            <div class="service-box">
-                <img src="image/a2.jpg">
-                <h3>Training</h3>
-                <p> Shreetech provides training on the latest technologies and areas in the IT& Engineering field. We have trained all levels of professionals from college grads to senior consultants. If you're looking for a career change, your search stops at Valltec.</p>
-            </div>
-            <div class="service-box">
-                <img src="image/a3.jpg">
-                <h3>Software Development</h3>
-                <p>Shreemtech provides information technology services for web development, enterprise wide application development maintenance, deployment and support of ERP/CRM solutions. </p>
-            </div>
-            <div class="service-box">
-                <img src="image/a4.jpg">
-                <h3>IT Managed Services</h3>
-                <p> Shreemtech has in-depth knowledge and experience in designing, deploying and integrating infrastructure management solutions. We offer a hybrid approach of onsite as well as offsite models, understanding that different organizations may prefer a suitable blend of two approaches.</p>
+                <!-- Service Box 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-box">
+                        <img src="image/a2.jpg" class="img-fluid">
+                        <h3>Training</h3>
+                        <p>Shreemtech provides training on the latest technologies and IT fields. We help professionals transition into IT careers.</p>
+                    </div>
+                </div>
+
+                <!-- Service Box 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-box">
+                        <img src="image/a3.jpg" class="img-fluid">
+                        <h3>Software Development</h3>
+                        <p>We provide IT services, including web development, ERP/CRM solutions, and enterprise-wide application support.</p>
+                    </div>
+                </div>
+
+                <!-- Service Box 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-box">
+                        <img src="image/a4.jpg" class="img-fluid">
+                        <h3>IT Managed Services</h3>
+                        <p>Our team designs, deploys, and integrates infrastructure management solutions with a hybrid onsite-offsite approach.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

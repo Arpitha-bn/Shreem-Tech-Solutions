@@ -4,45 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shreem-Tech</title>
-    <link rel="stylesheet" href="css/index.css"/> <!-- Link to external CSS -->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <style>
+        /* Background Image */
+        body {
+            background-image: url("image/bg5.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            }
+    </style>
 
 </head>
-<style>
-body {
-    background-image: url("image/bg5.jpg");
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-}
-</style>
-    <div class="fullContainer banner" id="homeSection">
-    
-        <!-- Navbar -->
-        <header>
-            <div class="navbar">
-                <!-- Left Side: Logo & Charity Name -->
-                <div class="logo-container">
-                    <img src="image/logo1.jpg" alt="Logo">
-                    <h1>SHREEM TECH SOLUTION</h1>
-                </div>
+<body>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="client.html">Client</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="image/logo1.jpg" alt="Logo" class="logo">
+                <span class="ms-2">SHREEM TECH SOLUTION</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="client.html">Client</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <div class="index">
-        <h1> Shreem Tech</h1>
-        <p>Shreemtech solutions is an Information Technology Consulting Company established in the year 2025. It is based out of the Silicon City of India, but not limited to local presence and also has a presence throughout the globe. Shreemtech offers customized IT Products, Services and Solutions to clients across the globe. Over the years, shreemtech has served various clients in Public, State and Commercial domains. shreemtech business solutions are based on requirements specified by operational business users from different industries such as Financial, Insurance, Healthcare, Automotive, Retail and Manufacturing. It delivers quality software and talent at very competitive rates to its clients.</p>
-        <div class="button-container">
-            <a href="index.html" class="more-button">FIND OUT MORE</a>
-    
-    </div>
+    <!-- Hero Section -->
+    <section class="hero-section text-center text-white">
+        <div class="container">
+            <h1>Shreem Tech</h1>
+            <p class="lead">
+                Shreemtech solutions is an Information Technology Consulting Company established in the year 2025. It is based out of the Silicon City of India, but not limited to local presence and also has a presence throughout the globe.
+            </p>
+            <a href="index.html" class="btn btn-primary">FIND OUT MORE</a>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

@@ -1,168 +1,103 @@
-
-/* Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+/* Navbar */
+.navbar-brand img.logo {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
 }
 
-body{
-    background-color: rgb(207, 174, 132);
-}
-
-/* Navbar Styling */
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #425a8b;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 50px;
-    z-index: 1000;
-}
-
-/* Left Side: Logo & Name */
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.logo-container img {
-    width: 60px;
-    height: 50px;
-    margin-right: 10px;
-}
-
-.logo-container h1 {
-    color: rgb(240, 234, 234);
-    font-size: 24px;
-    white-space: nowrap;
-}
-
-/* Right Side: Navbar Links */
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: rgba(236, 231, 231, 0.902);
-    font-size: 18px;
+.navbar-brand span {
+    font-size: 1.2rem;
     font-weight: bold;
-    padding: 8px 10px;
-    border-radius: 5px;
-    white-space: nowrap;
 }
-
-nav ul li a:hover {
-    background: #bd655c;
-}
-
-
 
 /* Services Section */
 .services-section {
-    padding: 100px 20px;
+    padding: 50px 0;
+    background-color: #f8f9fa;
 }
 
 .services-section h1 {
-    font-size: 36px;
+    font-size: 2.5rem;
+    font-weight: bold;
     color: #333;
-    margin-bottom: 20px;
-}
-
-/* Services Container */
-.services-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    text-align: center;
 }
 
 /* Service Box */
 .service-box {
     background: white;
     padding: 20px;
-    width: 250px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* margin: 15px 0; */
     text-align: center;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 400px;
 }
 
+/* Image inside service box */
 .service-box img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 10px;
+    width: 75%;
+    height: 150px; /* Fixed height for consistency */
+    object-fit: cover;
+    border-radius: 10px;
 }
 
+/* Title inside service box */
 .service-box h3 {
-    font-size: 22px;
-    color: #425a8b;
-    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #007bff;
+    margin-top: 10px;
 }
 
+/* Description inside service box */
 .service-box p {
-    font-size: 16px;
+    font-size: 1rem;
     color: #555;
+    flex-grow: 1; /* Ensures equal height for text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
 }
 
+/* Ensures uniform sizing for all service boxes */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
 
-   /* Responsive Design */
+/* Responsive Design */
+@media (max-width: 992px) {
+    .service-box {
+        min-height: 380px;
+    }
+}
+
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        height: auto;
-        padding: 10px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        padding-top: 10px;
-    }
-
-    nav ul li {
-        margin: 5px 0;
-    }
-
-    .services-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .service-box {
-        width: 90%;
-    }
-}
-
-/* For very small screens (mobile) */
-@media (max-width: 480px) {
-    .logo-container img {
-        width: 50px;
-        height: 40px;
-    }
-
-    .logo-container h1 {
-        font-size: 20px;
-    }
-
     .services-section h1 {
-        font-size: 28px;
-        text-align: center;
+        font-size: 2rem;
     }
 
     .service-box {
-        width: 95%;
+        max-width: 100%;
+        min-height: auto;
     }
 }
 
+@media (max-width: 480px) {
+    .services-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .service-box p {
+        font-size: 0.9rem;
+    }
+}
