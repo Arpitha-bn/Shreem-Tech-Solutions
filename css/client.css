@@ -119,3 +119,30 @@ nav ul li a:hover {
         height: 250px; /* Reduce image height for better fit */
     }
 }
+
+/* For very small screens (mobile) */
+@media (max-width: 480px) {
+    .logo-container img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .logo-container h1 {
+        font-size: 20px;
+    }
+
+    .gallery {
+        padding: 30px 10px; /* Further reduce padding */
+    }
+
+    .gallery img {
+        height: 200px; /* Reduce height for smaller screens */
+    }
+}
+
+
+
+
+
+
+
