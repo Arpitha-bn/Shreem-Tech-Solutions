@@ -36,18 +36,18 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="client.html">Client</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#index">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#client">Client</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section text-center text-white">
+    <section class="hero-section text-center text-white" id="index">
         <div class="container">
             <h1>Shreem Tech</h1>
             <p class="lead">
@@ -59,6 +59,134 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- About Section -->
+    <section class="about-section text-center" id="about">
+        <div class="container">
+            <h1 class="mb-4">About Us</h1>
+            <div class="row">
+                <!-- About Box 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="about-box">
+                        <img src="image/s1.jpg" class="img-fluid">
+                        <h3>About Us</h3>
+                        <p>Shreemtech business solutions cater to industries such as Financial, Insurance, Healthcare, and Retail.</p>
+                    </div>
+                </div>
+
+                <!-- About Box 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="about-box">
+                        <img src="image/s2.jpg" class="img-fluid">
+                        <h3>WHY SHREEMTECH</h3>
+                        <p>Our team delivers reliable software & IT consulting with tailor-made solutions to save time and cost.</p>
+                    </div>
+                </div>
+
+                <!-- About Box 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="about-box">
+                        <img src="image/s3.jpg" class="img-fluid">
+                        <h3>VISION & MISSION</h3>
+                        <p>We are dedicated to exceeding client expectations with high-quality IT solutions and consulting services.</p>
+                    </div>
+                </div>
+
+                <!-- About Box 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="about-box">
+                        <img src="image/s4.jpg" class="img-fluid">
+                        <h3>TEAM</h3>
+                        <p>Our highly qualified team provides innovative and customized IT services to meet diverse client needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Image Gallery Section -->
+     <section class="gallery-section" id="client">
+        <h2>Our Gallery</h2>
+        <div class="gallery-container">
+            <!-- <img src="image/ga1.jpg" class="gallery-img" alt="Gallery Image 1"> -->
+            <img src="image/ga2.jpg" class="gallery-img" alt="Gallery Image 2">
+            <img src="image/ga3.jpg" class="gallery-img" alt="Gallery Image 3">
+            <img src="image/ga4.jpg" class="gallery-img" alt="Gallery Image 4">
+        </div>
+    </section>
+
+     <!-- Services Section -->
+     <section class="services-section text-center" id="services">
+        <div class="container">
+            <h1 class="mb-4">At Our Service</h1>
+            <div class="row">
+                <!-- Service Box 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-box">
+                        <img src="image/a1.jpg" class="img-fluid">
+                        <h3>Recruitment</h3>
+                        <p>Shreemtech is committed to providing customer satisfaction through commitment and the highest standards of service.</p>
+                    </div>
+                </div>
+
+                <!-- Service Box 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-box">
+                        <img src="image/a2.jpg" class="img-fluid">
+                        <h3>Training</h3>
+                        <p>Shreemtech provides training on the latest technologies and IT fields. We help professionals transition into IT careers.</p>
+                    </div>
+                </div>
+
+                <!-- Service Box 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-box">
+                        <img src="image/a3.jpg" class="img-fluid">
+                        <h3>Software Development</h3>
+                        <p>We provide IT services, including web development, ERP/CRM solutions, and enterprise-wide application support.</p>
+                    </div>
+                </div>
+
+                <!-- Service Box 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-box">
+                        <img src="image/a4.jpg" class="img-fluid">
+                        <h3>IT Managed Services</h3>
+                        <p>Our team designs, deploys, and integrates infrastructure management solutions with a hybrid onsite-offsite approach.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section class="contact-section text-center" id="contact">
+        <div class="container">
+            <h1 class="mb-4">Contact Us</h1>
+            <p class="lead">Ready to start your next project with us? Give us a call or send us an email, and we will get back to you as soon as possible!</p>
+
+            <div class="row justify-content-center mt-4">
+                <!-- Phone -->
+                <div class="col-md-5 contact-box">
+                    <img src="image/call1.jpg" class="icon mb-2">
+                    <h5>Phone</h5>
+                    <a href="tel:+918310928117" class="contact-link">+91 8310928117</a>
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-5 contact-box">
+                    <img src="image/call.jpg" class="icon mb-2">
+                    <h5>Email</h5>
+                    <a href="mailto:info@shreemtech.com" class="contact-link">info@shreemtech.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
 
 </body>
 </html>
