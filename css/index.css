@@ -131,14 +131,19 @@ nav ul li a:hover {
         margin: 5px 0;
     }
 
-    .services-container {
-        flex-direction: column; /* Stack service boxes vertically */
-        align-items: center;
+    .index {
+        margin-top: 120px;
+        padding: 10px;
+        text-align: center;
     }
 
-    .service-box {
-        width: 90%; /* Adjust width for smaller screens */
-        max-width: 300px;
+    .index h1 {
+        font-size: 28px;
+    }
+
+    .more-button {
+        font-size: 14px;
+        padding: 8px 15px;
     }
 }
 
@@ -153,13 +158,13 @@ nav ul li a:hover {
         font-size: 20px;
     }
 
-    .services-section {
-        padding: 50px 10px; /* Reduce padding */
+    .index h1 {
+        font-size: 24px;
     }
 
-    .service-box {
-        width: 100%; /* Full width on smaller screens */
-        max-width: 250px;
+    .more-button {
+        font-size: 12px;
+        padding: 6px 12px;
     }
 }
 

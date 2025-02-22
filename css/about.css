@@ -135,16 +135,14 @@ nav ul li a:hover {
         margin: 5px 0;
     }
 
-    .contact-section {
-        padding: 50px 10px;
+    .services-container {
+        flex-direction: column; /* Stack service boxes vertically */
+        align-items: center;
     }
 
-    .contact-section h1 {
-        font-size: 28px;
-    }
-
-    .contact-info {
-        font-size: 18px;
+    .service-box {
+        width: 90%; /* Adjust width for smaller screens */
+        max-width: 300px;
     }
 }
 
@@ -159,11 +157,12 @@ nav ul li a:hover {
         font-size: 20px;
     }
 
-    .contact-section h1 {
-        font-size: 24px;
+    .services-section {
+        padding: 50px 10px; /* Reduce padding */
     }
 
-    .contact-info {
-        font-size: 16px;
+    .service-box {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 250px;
     }
 }
