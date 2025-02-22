@@ -1,0 +1,168 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #425a8b;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 50px;
+    z-index: 1000;
+}
+
+/* Left Side: Logo & Name */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 60px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo-container h1 {
+    color: rgb(245, 233, 233);
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+/* Right Side: Navbar Links */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(247, 237, 237, 0.957);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+nav ul li a:hover {
+    background: #bd655c;
+}
+
+/* Styling for Content */
+.index {
+    margin-top: 150px; /* Adjusts space below navbar */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(229, 244, 244);
+}
+
+.index h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: rgba(242, 103, 4, 0.434);
+    text-align: center;
+}
+
+.index p {
+    font-size: 18px;
+}
+
+
+/* Button Styling */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.more-button {
+    display: inline-block;
+    background-color: #b54c40;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+    /* box-sizing: border-box; */
+}
+
+.more-button:hover {
+    background-color: #b7524b;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .services-container {
+        flex-direction: column; /* Stack service boxes vertically */
+        align-items: center;
+    }
+
+    .service-box {
+        width: 90%; /* Adjust width for smaller screens */
+        max-width: 300px;
+    }
+}
+
+/* For very small screens (mobile) */
+@media (max-width: 480px) {
+    .logo-container img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .logo-container h1 {
+        font-size: 20px;
+    }
+
+    .services-section {
+        padding: 50px 10px; /* Reduce padding */
+    }
+
+    .service-box {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 250px;
+    }
+}
+
+
+
+

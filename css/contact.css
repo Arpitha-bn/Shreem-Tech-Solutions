@@ -1,0 +1,167 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #d3bebe;
+    /* color: rgb(0, 0, 0); */
+    text-align: center;
+    /* padding-top: 10px; */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #425a8b;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 50px;
+    z-index: 1000;
+}
+
+/*  Left side: logo & name */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 60px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo-container h1 {
+    color: rgb(245, 233, 233);
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+/* Right side: navbar links  */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(247, 237, 237, 0.957);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+nav ul li a:hover {
+    background: #b7524b;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 100px 20px;
+}
+
+.contact-section h1 {
+    font-size: 36px;
+    color: #0d0c0c;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    color: #141212;
+    margin-bottom: 20px;
+}
+
+/* Contact Info */
+.contact-info {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Call & Email Icons */
+.icon {
+    width: 24px;  /* Adjust size */
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #221823;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    color: #bd655c;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .contact-section {
+        padding: 50px 10px;
+    }
+
+    .contact-section h1 {
+        font-size: 28px;
+    }
+
+    .contact-info {
+        font-size: 18px;
+    }
+}
+
+/* For very small screens (mobile) */
+@media (max-width: 480px) {
+    .logo-container img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .logo-container h1 {
+        font-size: 20px;
+    }
+
+    .contact-section h1 {
+        font-size: 24px;
+    }
+
+    .contact-info {
+        font-size: 16px;
+    }
+}
+
